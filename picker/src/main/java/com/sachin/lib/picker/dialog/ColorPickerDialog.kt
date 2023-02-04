@@ -324,7 +324,7 @@ private fun RgbTextField(
             color = LocalContentColor.current
         ),
         keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
-        modifier = modifier,
+        modifier = modifier.widthIn(48.dp),
         cursorBrush = SolidColor(MaterialTheme.colors.primary)
     )
 }
