@@ -1,6 +1,6 @@
 
 [![](https://jitpack.io/v/sachinkumar53/ColorPicker.svg)](https://jitpack.io/#sachinkumar53/ColorPicker)       
-# Color Picker
+# Color Picker - Compose 
 This is a color picker library for android written in Kotlin using Jetpack Compose. The library is very simple, easy to use and lightweight.
 
 ## Screenshots
