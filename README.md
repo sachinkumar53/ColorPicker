@@ -65,9 +65,10 @@ Column(modifier = modifier.fillMaxWidth().padding(16.dp)) {
 
     //Other composables
 }
-
-Checkout the sample app for more information.
 ```
+Checkout the sample app for more information.
+
+
 ## Contributing
 
 If you find a bug or have a feature request, please create a new issue on our GitHub repository. We welcome contributions from the community, so feel free to fork the repository and submit a pull request with your changes.
