@@ -1,14 +1,12 @@
-#jdk:
-#  - openjdk17
-#before_install:
-#  - ./scripts/prepareJitpackEnvironment.sh
-
+## jitpack.yml
 jdk:
   - openjdk21
 before_install:
   - sdk install 21.ea.35-open
   - sdk use java 21.ea.35-open
-  - sdk install gradle 8.6
-  - sdk use gradle 8.6
 install:
   make publish
+
+## Makefile script execution
+publish:
+  ./gradlew clean assemble publishToMavenLocal -xtest
