@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id("maven-publish")
 }
 
 android {
@@ -44,4 +45,24 @@ dependencies {
 
     implementation(libs.colormath)
     implementation(libs.androidx.datastore.preferences)
+}
+
+publishing {
+    publications {
+        publications {
+            create<MavenPublication>("maven") {
+                groupId = "com.github.sachinkumar53"
+                artifactId = "ColorPicker"
+                version = "1.0.5"
+
+//                from(components["java"])
+                pom {
+                    description = "A color picker library"
+                }
+            }
+        }
+    }
+    repositories {               // << --- ADD This
+        mavenLocal()
+    }
 }
