@@ -53,7 +53,7 @@ publishing {
             create<MavenPublication>("maven") {
                 groupId = "com.github.sachinkumar53"
                 artifactId = "ColorPicker"
-                version = "1.0.5"
+                version = "1.0.12"
 
 //                from(components["java"])
                 pom {
