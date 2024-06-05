@@ -1,4 +1,14 @@
+#jdk:
+#  - openjdk17
+#before_install:
+#  - ./scripts/prepareJitpackEnvironment.sh
+
 jdk:
-  - openjdk17
+  - openjdk21
 before_install:
-  - ./scripts/prepareJitpackEnvironment.sh
+  - sdk install 21.ea.35-open
+  - sdk use java 21.ea.35-open
+  - sdk install gradle 8.6
+  - sdk use gradle 8.6
+install:
+  make publish
