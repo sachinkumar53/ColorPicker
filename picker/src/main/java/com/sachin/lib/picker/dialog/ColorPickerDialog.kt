@@ -40,7 +40,8 @@ fun ColorPickerDialog(
     onColorSelected: (Color) -> Unit,
     color: Color,
     modifier: Modifier = Modifier,
-    properties: DialogProperties = DialogProperties()
+    properties: DialogProperties = DialogProperties(),
+    showAlphaBar:Boolean = false
 ) {
     if (visible) {
         val context = LocalContext.current

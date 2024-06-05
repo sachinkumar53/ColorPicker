@@ -57,6 +57,7 @@ class MainActivity : ComponentActivity() {
                     ColorPickerDialog(
                         onDismissRequest = {
                             showDialog = false
+
                         },
                         color = color,
                         visible = showDialog,

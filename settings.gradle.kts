@@ -12,6 +12,7 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+
 rootProject.name = "SpectrumPicker"
-include ':app'
-include ':picker'
+include(":app")
+include(":picker")
